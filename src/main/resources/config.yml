@@ -1,0 +1,64 @@
+# ===========================
+# DreamChat Configuration
+# ===========================
+
+dream_cinematic:
+  enabled: true                # Master switch: enable/disable dream cinematics
+  speed: 5                     # Duration in seconds for the cinematic sequence
+  global_particle:
+    enabled: true              # If true, plays global particles around sleepers
+  global_sound:
+    enabled: true              # If true, plays global sounds during cinematic
+
+dream_messages:
+  enabled: true                # Master switch: enable/disable dream messages
+  random_order: true           # true = messages shown in random order, false = sequential order
+  display: action_bar          # How messages are shown: "action_bar" or "chat"
+  messages:                    # List of dream messages with effects
+    - enabled: true            # If false, this message will be skipped
+      message: "You drift into a deep dream..." # Text of the dream message
+      particle:                # Per-message particle effects
+        enabled: true          # Whether this message spawns particles
+        type: SMOKE            # Particle type (must be a valid Spigot Particle)
+        count: 8               # Number of particles to spawn
+        offset_x: 0.3          # Spread of particles on X-axis
+        offset_y: 0.5          # Spread of particles on Y-axis
+        offset_z: 0.3          # Spread of particles on Z-axis
+        speed: 0.01            # Particle speed value
+      sound:                   # Per-message sound effect
+        enabled: true          # Whether this message plays a sound
+        effect: ambient.cave   # Sound effect (must be in your sound map)
+        volume: 1.0            # Volume of the sound
+        pitch: 1.0             # Pitch of the sound
+
+    - enabled: true
+      message: "A strange warmth surrounds you..."
+      particle:
+        enabled: true
+        type: HEART
+        count: 5
+        offset_x: 0.5
+        offset_y: 0.5
+        offset_z: 0.5
+        speed: 0.0
+      sound:
+        enabled: true
+        effect: player.levelup
+        volume: 0.8
+        pitch: 1.2
+
+    - enabled: true
+      message: "The void whispers secrets..."
+      particle:
+        enabled: true
+        type: SOUL_FIRE_FLAME
+        count: 12
+        offset_x: 0.4
+        offset_y: 0.4
+        offset_z: 0.4
+        speed: 0.02
+      sound:
+        enabled: true
+        effect: ender_dragon.ambient
+        volume: 0.6
+        pitch: 0.9

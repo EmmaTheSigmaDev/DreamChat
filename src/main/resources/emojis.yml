@@ -1,0 +1,19 @@
+# ===========================
+# DreamChat Emoji Replacements
+# ===========================
+# Replace text codes with Unicode symbols in chat
+# Example: typing ":heart:" in chat will show ❤
+
+emojis:
+  ":heart:": "❤"     # Replaces :heart: with a heart symbol
+  ":star:": "✦"      # Replaces :star: with a star symbol
+  ":sparkle:": "✨"  # Replaces :sparkle: with a sparkle symbol
+  ":smile:": "☺"     # Replaces :smile: with a smiley face
+  ":fire:": "🔥"     # Replaces :fire: with a fire emoji
+  ":sun:": "☀"      # Replaces :sun: with a sun symbol
+  ":moon:": "☾"     # Replaces :moon: with a crescent moon
+  ":music:": "♫"    # Replaces :music: with a music note
+  ":sword:": "⚔"    # Replaces :sword: with a sword icon
+  ":pickaxe:": "⛏"  # Replaces :pickaxe: with a pickaxe
+  ":bow:": "🏹"     # Replaces :bow: with a bow and arrow
+  ":shield:": "🛡"  # Replaces :shield: with a shield

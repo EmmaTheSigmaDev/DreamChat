@@ -1,0 +1,36 @@
+# ===========================
+# DreamChat Plugin Definition
+# ===========================
+
+name: DreamChat
+version: '0.1.0'
+main: me.bay.dreamChat.DreamChat
+api-version: '1.21'
+authors:
+  - Emma_the_sigma
+description: Transforms sleeping into a cinematic, emoji-filled dream experience with vote-based night skipping.
+website: https://github.com/EmmaTheSigmaDev
+
+# ===========================
+# Commands
+# ===========================
+commands:
+  dreamchat:
+    description: Main command for DreamChat
+    usage: /<command> [reload|info]
+    aliases: [dc, dreamc]
+    permission: dreamchat.use
+
+# ===========================
+# Permissions
+# ===========================
+permissions:
+  dreamchat.use:
+    description: Allows using /dreamchat commands
+    default: true
+  dreamchat.reload:
+    description: Allows reloading DreamChat configs
+    default: op
+  dreamchat.info:
+    description: Allows checking plugin info
+    default: true
